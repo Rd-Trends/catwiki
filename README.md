@@ -16,7 +16,7 @@
 - User can search for cat breeds and select a breed of their choice
 - User can see a summary of the most popular cat breed on the homepage
 - User can see the top 10 most searched cat breeds
-- I can see the breed details including description, temperament, origin, life span, adaptability, affection level, child-friendly, grooming, intelligence, health issues, social needs, stranger friendly
+- User can see the breed details including description, temperament, origin, life span, adaptability, affection level, child-friendly, grooming, intelligence, health issues, social needs, stranger friendly
 
 ## How to run this app locally
 
