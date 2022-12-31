@@ -20,6 +20,7 @@ const WhyHaveACat = () => {
           rel="norefferer"
           target="_blank"
           className="flex items-center font-bold"
+          aria-label="reasons why you should have a cat"
         >
           <span className="mr-4 text-xs md:text-lg">SEE MORE</span>
           <FaLongArrowAltRight />

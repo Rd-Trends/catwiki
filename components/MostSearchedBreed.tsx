@@ -22,7 +22,12 @@ const MostSearchedBreed = () => {
             href="/top-10-most-searched-cats"
             className="flex items-center font-bold"
           >
-            <span className="mr-4 text-xs md:text-lg">SEE MORE</span>
+            <span
+              className="mr-4 text-xs md:text-lg"
+              aria-label="top most searched breed"
+            >
+              SEE MORE
+            </span>
             <FaLongArrowAltRight />
           </Link>
         </div>

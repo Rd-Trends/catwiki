@@ -27,7 +27,7 @@ const Seo = ({ title = "Discover several Cat breeds | Catwiki", description = "D
       />
       <meta
         property="og:image"
-        content="https://rd-catwiki.vercel.app/images/og.png"
+        content="https://rd-catwiki.vercel.app/og.png"
       />
       <meta property="og:image:height" content="566" />
       <meta property="og:image:width" content="1280" />

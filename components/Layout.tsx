@@ -7,7 +7,7 @@ import Footer from "./Footer";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className=" pt-6 mx-4 md:mx-20 lg:mx-20 flex flex-col justify-between min-h-screen ">
-      <Link href="/" className=" no-underline ">
+      <Link href="/" className=" no-underline " aria-label="visit homepage">
         <Image
           src="/images/CatwikiLogo.svg"
           alt=""
