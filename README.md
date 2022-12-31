@@ -23,4 +23,6 @@
 - clone this repository
 - run `npm install`
 - run `npm run dev`
-- befor deploying, please edit base url in the config file
+- create a .env.local file and add the variable `API_KEY = your api key`. visit [thecatapi](https://thecatapi.com/) to get your api key.
+- befor deploying, please edit base url in the config file in the root directory
+  
