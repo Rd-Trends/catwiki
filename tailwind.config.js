@@ -8,8 +8,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'herolarge': "url('/images/HeroImagelg.png)"
-      }
+        herolarge: "url('/images/HeroImagelg.png)",
+      },
+      fontFamily: {
+        sans: ["var(--font-montserrat)"],
+      },
     },
   },
   plugins: [],

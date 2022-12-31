@@ -18,5 +18,4 @@ a {
   box-sizing: border-box;
   transition: linear, background-color 0.3s linear,
     border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  font-family: "Montserrat", sans-serif;
 }

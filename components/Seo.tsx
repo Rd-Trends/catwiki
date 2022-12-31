@@ -27,13 +27,13 @@ const Seo = ({ title = "Discover several Cat breeds | Catwiki", description = "D
       />
       <meta
         property="og:image"
-        content="https://rd-catwiki.vercel.app/og.png"
+        content="https://rd-catwiki.vercel.app/images/og.png"
       />
       <meta property="og:image:height" content="566" />
       <meta property="og:image:width" content="1280" />
       <link rel="icon" type="image/png" href="/images/devchallenges.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta httpEquiv="x-ua-compatible" content="ie=edge" />
     </Head>
   );
 };

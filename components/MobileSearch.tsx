@@ -39,7 +39,7 @@ const MobileSearch = () => {
         onClick={() => setShowMobileSearch(true)}
       >
         <p className="py-2 px-4 text-xs font-medium">Search</p>
-        <button className="pr-4">
+        <button className="pr-4" aria-label="Search">
           <AiOutlineSearch />
         </button>
       </div>
@@ -56,6 +56,7 @@ const MobileSearch = () => {
             <button
               className=" bg-[rgba(151,151,151,0.1)] p-2 rounded-lg "
               onClick={() => setShowMobileSearch(false)}
+              aria-label="Close searchbox"
             >
               <AiOutlineClose size={20} />
             </button>
@@ -67,7 +68,7 @@ const MobileSearch = () => {
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="enter your breed"
               />
-              <button className="p-2 px-4">
+              <button className="p-2 px-4" aria-label="Search">
                 <AiOutlineSearch />
               </button>
             </div>

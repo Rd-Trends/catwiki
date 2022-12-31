@@ -14,12 +14,12 @@ const LargeDeviceSearch = () => {
       <div className="hidden  bg-white md:flex items-center rounded-[60px] max-w-xs mt-12 mb-2 text-lg font-medium">
         <input
           type="text"
-          className="py-4 px-6 bg-transparent outline-none border-none"
+          className="py-4 px-6 w-11/12 bg-transparent outline-none border-none"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="enter your breed"
         />
-        <button>
+        <button aria-label="Search" className="py-4 pr-6">
           <AiOutlineSearch />
         </button>
       </div>

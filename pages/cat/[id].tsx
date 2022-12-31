@@ -23,7 +23,7 @@ const Cat = () => {
 
   return (
     <Layout>
-      <Seo title={`the ${breed?.name} cat`} description={breed?.description} />
+      <Seo title={breed?.name} description={breed?.description} />
       <div className=" md:flex md:justify-between md:items-start lg:mx-6 mt-6 md:mt-8">
         <div className="flex items-center md:w-5/12">
           <div className=" w-[10px] h-72 bg-[#DEC68B] rounded-l-[14px] z-0 "></div>

@@ -10,13 +10,14 @@ import { fetcher } from "../utils/fetcher";
 
 const montserrat = Montserrat({
   weight: ["200", "300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  style: ["normal"],
   subsets: ["latin"],
+  variable: "--font-montserrat",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={montserrat.className}>
+    <div className={`${montserrat.variable} font-sans`}>
       <SWRConfig value={{ fetcher }}>
         <ErrorBoundary>
           <Suspense fallback="loading from app">
