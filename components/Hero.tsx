@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+
 import hero from "../public/images/HeroImagelg.png";
 import LargeDeviceSearch from "./LargeDeviceSearch";
 import MobileSearch from "./MobileSearch";
