@@ -13,8 +13,7 @@ handler.get(async (req: NextApiRequest, res: NextApiResponse) => {
       `https://api.thecatapi.com/v1/images/search?limit=8&breed_ids=${id}&order=RAND`,
       {
         headers: {
-          "x-api-key":
-            "live_A1WvrTMvRPw21apXysbZf37U9WN5iKK77fJnW0WLncP0JmLne72NT32kOAJqLHts",
+          "x-api-key": process.env.API_KEY!,
           "Content-Type": "application/json",
         },
       }

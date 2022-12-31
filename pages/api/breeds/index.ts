@@ -7,10 +7,10 @@ handler.get(async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const response = await fetch("https://api.thecatapi.com/v1/breeds", {
       headers: {
-        "x-api-key":
-          "live_A1WvrTMvRPw21apXysbZf37U9WN5iKK77fJnW0WLncP0JmLne72NT32kOAJqLHts",
+        "x-api-key": process.env.API_KEY!,
         "Content-Type": "application/json",
       },
+      cache: "no-cache",
     });
 
     if (response.status === 200) {
