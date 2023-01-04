@@ -1,4 +1,4 @@
-import { useAtom, useAtomValue } from "jotai";
+import { useAtomValue } from "jotai";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
@@ -34,7 +34,11 @@ const MostSearchedBreed = () => {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mt-4 md:mt-8">
         {fourMostSearchedBreeds.map((breed) => (
-          <div key={breed.name}>
+          <Link
+            href={`/cat/${breed.name}`}
+            key={breed.name}
+            className="no-underline block"
+          >
             <Image
               src={breed.image!.url}
               alt=""
@@ -45,7 +49,7 @@ const MostSearchedBreed = () => {
             <h3 className=" text-xs md:text-lg font-semibold mt-1 md:mt-2 ">
               {breed.name}
             </h3>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
