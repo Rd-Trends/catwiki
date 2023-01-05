@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import { SWRConfig } from "swr";
 
 import ErrorBoundary from "../components/ErrorBoundary";
+import Loader from "../components/Loader";
 import { fetcher } from "../utils/fetcher";
 
 const montserrat = Montserrat({
@@ -20,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={`${montserrat.variable} font-sans`}>
       <SWRConfig value={{ fetcher }}>
         <ErrorBoundary>
-          <Suspense fallback="loading from app">
+          <Suspense fallback={<Loader />}>
             <Component {...pageProps} />
           </Suspense>
         </ErrorBoundary>
